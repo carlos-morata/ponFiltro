@@ -1,0 +1,49 @@
+App.jsx
+    Header.jsx
+        Logo.jsx
+        Nav.jsx
+            PrimaryButton.jsx
+    Main.jsx
+        HeroSection.jsx
+            Titles.jsx
+            MainParagraph.jsx
+        FilterToolSection.jsx
+            OriginalMessage.jsx
+            ToneSelector.jsx
+            FilterButton.jsx
+            FilteredMessage.jsx
+        FilterImpactSection.jsx
+            ImpactCard.jsx
+        ToneEducationSection.jsx
+            ToneEducationStep.jsx
+        ExamplesEmailsSection.jsx
+            ToneExampleCard.jsx
+    Footer.jsx
+        Privacy.jsx
+        Legal.jsx
+        Contact.jsx
+
+INSTALACIÓN DE COMPONENTES
+/src/components
+    npx crcf src/components/Header Main Footer -j  --notest -f
+
+        /src/components/Header
+            npx crcf src/components/Header/Logo Nav -j --notest -f
+                /src/components/Header/Nav
+                    npx crcf src/components/Header/Nav/PrimaryButton -j --notest -f
+
+        /src/components/Main
+            npx crcf src/components/Main/HeroSection FilterToolSection FilterImpactSection ToneEducationSection ExamplesEmailsSection -j --notest -f
+                /src/components/Main/HeroSection
+                    npx crcf src/components/Main/HeroSection/Titles MainParagraph -j --notest -f
+                /src/components/Main/FilterToolSection
+                    npx crcf src/components/Main/FilterToolSection/OriginalMessage ToneSelector FilterButton FilteredMessage -j --notest -f
+                /src/components/Main/FilterImpactSection
+                    npx crcf src/components/Main/FilterImpactSection/ImpactCard -j --notest -f
+                /src/components/Main/ToneEducationSection
+                    npx crcf src/components/Main/ToneEducationSection/ToneEducationStep -j --notest -f
+                /src/components/Main/ExamplesEmailsSection
+                    npx crcf src/components/Main/ExamplesEmailsSection/ToneExampleCard -j --notest -f
+
+        /src/components/Footer
+            npx crcf src/components/Footer/Privacy Legal Contact -j --notest -f
