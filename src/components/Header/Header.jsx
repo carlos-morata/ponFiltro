@@ -3,7 +3,7 @@ import Logo from './Logo'
 import Nav from './Nav'
 
 const Header = () => {
-  return <header>
+  return <header className="header-container">
     <Logo />
     <Nav />
   </header>;

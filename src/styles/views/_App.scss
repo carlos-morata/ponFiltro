@@ -1,0 +1,17 @@
+@use "../utils/variables.scss" as variables;
+@use '../utils/mixins.scss' as mixins;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+html {
+    scrollbar-width: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100dvh;
+    box-sizing: variables.$border-box;
+    position: relative;
+    font-family: "Manrope", sans-serif;
+}
