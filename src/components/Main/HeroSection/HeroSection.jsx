@@ -3,7 +3,7 @@ import Titles from './Titles';
 import MainParagraph from './MainParagraph';
 
 const HeroSection = () => {
-  return <section>
+  return <section className="heroSection-container">
     <Titles />
     <MainParagraph />
   </section>;
