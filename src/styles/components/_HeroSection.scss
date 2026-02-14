@@ -4,15 +4,23 @@
 .heroSection-container {
     margin-top: 50px;
     text-align: center;
-}
 
-.heroSection-container h1 {
-    font-size: variables.$main-title;
-    font-weight: variables.$font-bold;
-}
+    h1 {
+        font-size: variables.$main-title;
+        font-weight: variables.$font-bold;
+    }
 
-.heroSection-container h2 {
-    font-size: variables.$second-title;
-    color: variables.$primary;
-    font-weight: variables.$font-bold;
+    h2 {
+        font-size: variables.$second-title;
+        color: variables.$primary;
+        font-weight: variables.$font-bold;
+    }
+
+    h2 + p {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        line-height: 22px;
+        color: variables.$text-second;
+    }
 }
