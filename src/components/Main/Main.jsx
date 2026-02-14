@@ -1,7 +1,10 @@
 import React from "react";
+import HeroSection from './HeroSection';
 
 const Main = () => {
-  return <div>Main</div>;
+  return <main className="main-container">
+    <HeroSection />
+  </main>;
 };
 
 export default Main;

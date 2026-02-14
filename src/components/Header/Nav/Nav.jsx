@@ -1,7 +1,9 @@
 import React from "react";
 
 const Nav = () => {
-  return <div>Nav</div>;
+  return <nav>
+    <button className="nav-btn">Pon filtro a tu email</button>
+  </nav>;
 };
 
 export default Nav;

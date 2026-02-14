@@ -1,0 +1,27 @@
+@use "../utils/variables.scss" as variables;
+@use '../utils/mixins.scss' as mixins;
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    box-sizing: border-box;
+    border-bottom: 2px solid variables.$background-light;
+}
+
+.logo {
+    width: 100px;
+    aspect-ratio: 2048/1117;
+}
+
+.nav-btn {
+    display: none;
+    width: 150px;
+    background-color: variables.$primary;
+    border-radius: variables.$border-radius;
+    border: none;
+    padding: 8px;
+    color: variables.$white;
+    font-weight: bold;
+}
