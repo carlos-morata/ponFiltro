@@ -2,6 +2,9 @@
 @use '../utils/mixins.scss' as mixins;
 
 .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
     background-color: variables.$background-light;
     box-sizing: variables.$border-box;
