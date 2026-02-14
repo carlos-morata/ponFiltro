@@ -1,7 +1,9 @@
 import React from "react";
 
 const ToneSelector = () => {
-  return <div>ToneSelector</div>;
+  return <div>
+    
+  </div>;
 };
 
 export default ToneSelector;
