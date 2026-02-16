@@ -1,8 +1,6 @@
 import React from "react";
 import OriginalMessage from './OriginalMessage';
 import FilteredMessage from './FilteredMessage';
-import ToneSelector from './ToneSelector';
-import FilterButton from './FilterButton';
 
 const FilterToolSection = () => {
   return <section className="filterSection-container">
@@ -12,10 +10,10 @@ const FilterToolSection = () => {
     <span className="checkbox checkbox-green">&#11044;</span>
     <p className="text-refiner">Refinador de texto V1.0</p>
     </div>
+    <section className="filterChat-container">
     <OriginalMessage />
     <FilteredMessage />
-    <ToneSelector />
-    <FilterButton />
+    </section>
   </section>;
 };
 
