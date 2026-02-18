@@ -3,8 +3,8 @@
 
 .filterSection-container {
     display: flex;
+    flex-direction: column;
     width: 95%;
-    height: 200px;
     box-sizing: variables.$border-box;
     background-color: #ebeffb;
     border-radius: variables.$border-radius;
@@ -37,5 +37,50 @@
         letter-spacing: 0.05em;
         margin-left: 10px;
         color: variables.$text-second
+    }
+
+    .originalMessage-container {
+        width: 100%;
+        background-color: variables.$white;
+        box-sizing: variables.$border-box;
+        margin-top: 8px;
+
+        h3 {
+            display: flex;
+            align-items: center;
+            column-gap: 0.30rem;
+            padding-top: 0.85rem;
+            padding-left: 0.85rem;
+            font-size: 0.85rem;
+        }
+
+        .lucide-clipboard-pen-line {
+            width: 18px;
+        }
+
+        .original-chat {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 0.50rem;
+            
+            #originalMessage{
+                width: 90%;
+                height: 75px;
+                padding: 10px;
+                box-sizing: variables.$border-box;
+                background-color: variables.$background-light;
+                border-radius: variables.$border-radius;
+                border: 1px solid variables.$background-dark;
+            }
+        }
+
+    }
+
+    .toneSelector-section {
+        width: 90%;
+        border-radius: variables.$border-box;
+        border-radius: variables.$border-radius;
+        background-color: #ebeffb;
     }
 }
