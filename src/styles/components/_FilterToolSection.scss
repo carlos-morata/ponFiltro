@@ -73,14 +73,62 @@
                 border-radius: variables.$border-radius;
                 border: 1px solid variables.$background-dark;
             }
+
+            #originalMessage:focus {
+                outline: none;
+            }
         }
 
     }
 
     .toneSelector-section {
-        width: 90%;
-        border-radius: variables.$border-box;
-        border-radius: variables.$border-radius;
-        background-color: #ebeffb;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.2rem;
+        box-sizing: variables.$border-box;
+
+        .toneButtons-section {
+            width: 90%;
+            box-sizing: variables.$border-box;
+            border-radius: variables.$border-radius;
+            background-color: #ebeffb;
+            padding: 0.60rem;
+    
+            .tone-buttons {
+                background-color: transparent;
+                color: variables.$text-second;
+                border-radius: variables.$border-radius;
+                border: none;
+                font-size: 0.95rem;
+                padding: 4px 8px;
+            }
+    
+            .tone-buttons:not(.tone-buttons:first-child) {
+                margin-left: 10px;
+            }
+    
+        }
+
+        .filter-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+            width: 90%;
+            margin-top: 0.90rem;
+            padding: 8px 0px;
+            background-color: variables.$second;
+            border: none;
+            border-radius: variables.$border-radius;
+            color: variables.$white;
+            font-size: 0.95rem;
+            font-weight: variables.$font-bold;
+
+            .lucide-wand-sparkles {
+                width: 0.95rem;
+            }
+        }
     }
+
 }

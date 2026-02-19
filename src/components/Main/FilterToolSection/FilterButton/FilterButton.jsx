@@ -1,8 +1,9 @@
 import React from "react";
+import { WandSparkles } from 'lucide-react';
 
 const FilterButton = () => {
   return <button className="filter-button">
-    Aplicar filtro
+    <WandSparkles /> Aplicar filtro
   </button>;
 };
 
