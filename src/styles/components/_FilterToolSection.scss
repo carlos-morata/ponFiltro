@@ -118,17 +118,93 @@
             width: 90%;
             margin-top: 0.90rem;
             padding: 8px 0px;
+            margin-bottom: 1rem;
             background-color: variables.$second;
             border: none;
             border-radius: variables.$border-radius;
             color: variables.$white;
             font-size: 0.95rem;
             font-weight: variables.$font-bold;
+            cursor: pointer;
 
             .lucide-wand-sparkles {
                 width: 0.95rem;
             }
+
+            .filter-button:hover {
+                background-color: variables.$second-hover;
+            }
         }
     }
 
+    .filteredMessage-container {
+        width: 100%;
+        box-sizing: variables.$border-box;
+        background-color: #ebeffb;
+
+        .filteredTop-container {
+            display: flex;
+            justify-content: space-between;
+            
+            h3 {
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                font-size: 0.85rem;
+                padding: 10px 0px 10px 15px;
+                color: variables.$primary;
+    
+                .lucide-badge-check {
+                    width: 18px;
+                }
+            }
+    
+            .copy-button {
+                display: flex;
+                align-items: center;
+                column-gap: 4px;
+                padding: 15px 10px 10px 0px;
+                border: none;
+                background-color: transparent;
+                color: variables.$text-second;
+                text-transform: uppercase;
+                font-size: variables.$main-text;
+    
+                .lucide-files {
+                    width: 14px;
+                }
+            }
+        }
+
+        .filteredChat-section {
+            width: 90%;
+            margin: 0 auto;
+            box-sizing: variables.$border-box;
+
+            .filtered-message {
+                width: 100%;
+                background-color: variables.$white;
+                padding: 20px;
+                line-height: 25px;
+                box-sizing: variables.$border-box;
+                border-radius: variables.$border-radius;
+                font-size: 0.85rem;
+                box-shadow: 0px 0px 2px 0px variables.$primary;
+            }
+        }
+        
+        .info-text {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: 6px;
+            font-size: variables.$main-text;
+            margin: 10px 0px 15px 0px;
+            color: variables.$text-second;
+
+            .lucide-zap {
+                width: 12px;
+            }
+        }
+    }
 }
