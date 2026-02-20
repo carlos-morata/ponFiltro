@@ -1,0 +1,23 @@
+@use "../utils/variables.scss" as variables;
+@use '../utils/mixins.scss' as mixins;
+
+
+.impact-section {
+    width: 100%;
+    box-sizing: variables.$border-box;
+    background-color: variables.$white;
+    text-align: center;
+
+    .title-impact {
+        font-size: variables.$second-title;
+        margin-top: 3.5rem;
+    }
+
+    .title-impact + p {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        color: variables.$text-second;
+    }
+}
