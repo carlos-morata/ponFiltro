@@ -3,7 +3,7 @@ import ImpactCard from './ImpactCard';
 
 const FilterImpactSection = () => {
   return <section className="impact-section">
-    <h2>El impacto de un buen filtro</h2>
+    <h2 className="title-impact">El impacto de un buen filtro</h2>
     <p>La diferencia de crear un conflicto y resolver un problema.</p>
     <ImpactCard />
   </section>;
