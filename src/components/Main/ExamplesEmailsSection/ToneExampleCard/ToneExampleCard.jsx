@@ -1,10 +1,11 @@
 import React from "react";
+import { Banknote, WifiCog, UsersRound } from 'lucide-react';
 
 const ToneExampleCard = () => {
   return <>
     <article className="example-article">
       <p>Filtro: Directo</p>
-      <h3 className="title-example">Reclamación de pago</h3>
+      <h3 className="title-example">Reclamación de pago <Banknote /></h3>
       <span className="span-original">Original</span>
       <p className="paragraph-original-example">
         "Pagadme ya lo que me debéis, que siempre os retrasáis y no es serio."
@@ -15,7 +16,7 @@ const ToneExampleCard = () => {
 
     <article className="example-article">
       <p>Filtro: Diplomático</p>
-      <h3 className="title-example">Email a un superior</h3>
+      <h3 className="title-example">Email a un superior <WifiCog /></h3>
       <span className="span-original">Original</span>
       <p className="paragraph-original-example">"No puedo con todo este trabajo, estoy saturado y nadie me ayuda. Así no llego."</p>
       <span className="span-filter">Filtrado</span>
@@ -24,7 +25,7 @@ const ToneExampleCard = () => {
 
     <article className="example-article">
       <p>Filtro: Neutral</p>
-      <h3 className="title-example">Corrección a un compañero</h3>
+      <h3 className="title-example">Corrección a un compañero <UsersRound /></h3>
       <span className="span-original">Original</span>
       <p className="paragraph-original-example">"Has hecho mal el informe, los datos no tienen sentido. Tienes que repetirlo."</p>
       <span className="text-filter">Filtrado</span>
