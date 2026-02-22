@@ -1,0 +1,53 @@
+@use "../utils/variables.scss" as variables;
+@use '../utils/mixins.scss' as mixins;
+
+.education-section {
+    width: 90%;
+    box-sizing: variables.$border-box;
+    
+    .step-article:first-child {
+        margin-top: 4.5rem;
+    }
+    
+    .step-article {
+        width: 100%;
+        text-align: center;
+
+        .title-step, .paragraph-step {
+            margin-top: 0.85rem;
+        }
+
+        .lucide {
+            background-color: #f1f5f9;
+            border-radius: 1.5rem;
+            padding: 15px;
+        }
+        
+        .lucide-clipboard-paste {
+            color: variables.$primary;            
+        }
+
+        .lucide-sliders-horizontal {
+            color: variables.$second;
+        }
+
+        .lucide-circle-check{
+            color: #22c55e;
+        }
+
+        .paragraph-step {
+            color: variables.$text-second;
+            line-height: 22px;
+            font-size: 0.85rem;
+        }
+    }
+
+    .step-article:not(.step-article:first-child) {
+        margin-top: 2.2rem;
+    }
+
+    .step-article:last-child {
+        margin-bottom: 2.5rem;
+    }
+}
+

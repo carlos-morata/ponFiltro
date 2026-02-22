@@ -1,0 +1,87 @@
+@use "../utils/variables.scss" as variables;
+@use '../utils/mixins.scss' as mixins;
+
+
+.impact-section {
+    width: 100%;
+    box-sizing: variables.$border-box;
+    background-color: variables.$white;
+    text-align: center;
+
+    .title-impact {
+        font-size: variables.$second-title;
+        margin-top: 3.5rem;
+    }
+
+    .title-impact + p {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        color: variables.$text-second;
+    }
+
+    .cards-section {
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        row-gap: 1.8rem;
+        margin-top: 2.5rem;
+
+        .mail-article {
+            width: 90%;
+            position: relative;
+            box-sizing: variables.$border-box;
+            background-color: variables.$background-light;
+            border-radius: variables.$border-radius;
+
+            .title-mail {
+                position: absolute;
+                top: 0;
+                left: 10px;
+                transform: translateY(-50%);
+                font-weight: variables.$font-bold;
+                border-radius: variables.$border-radius;
+                text-transform: uppercase;
+                font-size: variables.$main-text;
+            }
+
+            .paragraph-mail {
+                padding: 20px 10px;
+                font-size: variables.$main-text;
+                line-height: 20px;
+            }
+        }
+        
+        .original-mail {
+            border-left: 4px solid #f87171;
+            
+            h4 {
+                width: 120px;
+                background-color: #fee2e2;
+                color: #dc262c;
+                padding: 2px;
+            }
+
+            p {
+               font-style: italic;
+            }
+        }
+        
+        .filtered-mail {
+            border-left: 4px solid variables.$primary;
+            margin-bottom: 4.5rem;
+            
+            h4 {
+                width: 130px;
+                background-color: #dbeafe;
+                color: variables.$primary;
+                padding: 3px;
+            }
+
+            p {
+                font-weight: 600;
+            }
+        }
+    }
+}
